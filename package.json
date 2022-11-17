@@ -5,8 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build-linux": "rm -rf lib && tsc",
-    "build-windows": "rmdir /s lib && tsc",
+    "build": "tsc",
     "build:test": "rm -rf testDist && tsc -p test/tsconfig.json",
     "lint": "eslint src/",
     "fmt": "prettier --write src/ && yarn lint --fix",
