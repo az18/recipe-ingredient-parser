@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "build-linux": "rm -rf lib && tsc",
     "build-windows": "rmdir /s lib && tsc",
     "build:test": "rm -rf testDist && tsc -p test/tsconfig.json",
